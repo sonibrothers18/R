@@ -41,13 +41,35 @@ logiv<-c(FALSE,TRUE,TRUE)
 print(logiv)
 class(logiv)
 
+# Accessing elements of vectors
+char_vec<-c("ram"=12, "sham"=32, "mayur"=5)
+print(char_vec)
+char_vec["mayur"]
+char_vec[2]
 
+a1<-c(1,2,3,4,5,6,7)
+a1[c(TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE)]
 
+a2<-c(10,20,30,40)
+print(a2[-2])
+print(a2[2:4])
+print(a2[c(2,4,2)])
 
+# vector operations
+v1<-c(1,2,3,4,5)
+v2<-c("ram","mayur")
+v3<-c(v1,v2)
+print(v3)
 
+v4<-c(10,20,30,40,50)
+print(v1+v4)
 
+# Naming of vector
+details<-c("mayur", "22", "B")
+print(details)
 
+names(details) = c("name","roll","class")
+print(details)
 
-
-
-
+details[2]
+details["class"]
